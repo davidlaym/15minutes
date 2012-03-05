@@ -1,0 +1,9 @@
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\bin\Debug\15minutes.exe.config
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\bin\Debug\15minutes.exe
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\bin\Debug\15minutes.pdb
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\obj\Debug\_15minutes.FormMain.resources
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\obj\Debug\_15minutes.Properties.Resources.resources
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\obj\Debug\_15minutes.DurationDialog.resources
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\obj\Debug\15minutes.csproj.GenerateResource.Cache
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\obj\Debug\15minutes.exe
+C:\Users\dlay\Fuentes\_Varios\15minutes\windows\15minutes\obj\Debug\15minutes.pdb
