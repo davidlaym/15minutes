@@ -49,10 +49,10 @@ namespace _15minutes
             this.label5min.MouseLeave += new EventHandler(label_MouseLeave);
             this.label15min.MouseEnter += new EventHandler(label_MouseEnter);
             this.label15min.MouseLeave += new EventHandler(label_MouseLeave);
-            this.label30min.MouseEnter += new EventHandler(label_MouseEnter);
-            this.label30min.MouseLeave += new EventHandler(label_MouseLeave);
-            this.label1hr.MouseEnter += new EventHandler(label_MouseEnter);
-            this.label1hr.MouseLeave += new EventHandler(label_MouseLeave);
+            this.label25min.MouseEnter += new EventHandler(label_MouseEnter);
+            this.label25min.MouseLeave += new EventHandler(label_MouseLeave);
+            this.label45min.MouseEnter += new EventHandler(label_MouseEnter);
+            this.label45min.MouseLeave += new EventHandler(label_MouseLeave);
             this.labelWebSite.MouseEnter += new EventHandler(label_MouseEnter);
             this.labelWebSite.MouseLeave += new EventHandler(label_MouseLeave);
             this.labelOther.MouseEnter += new EventHandler(label_MouseEnter);
@@ -95,34 +95,34 @@ namespace _15minutes
             this.buttonPauseResume.Location = new Point(dx / 2, dy - buttonDy);
             this.buttonPauseResume.Size = new Size(dx / 2, buttonDy);
 
-            int txtDx = this.labelWebSite.Width;
-            int txtDy = this.labelWebSite.Height;
-            Debug.Assert(txtDy == this.label5min.Height);
-            Debug.Assert(txtDy == this.label15min.Height);
-            Debug.Assert(txtDy == this.label30min.Height);
+            //int txtDx = this.labelWebSite.Width;
+            //int txtDy = this.labelWebSite.Height;
+            //Debug.Assert(txtDy == this.label5min.Height);
+            //Debug.Assert(txtDy == this.label15min.Height);
+            //Debug.Assert(txtDy == this.label25min.Height);
 
-            this.labelWebSite.Location = new Point(2, dy - buttonDy - txtDy - 2);
+            //this.labelWebSite.Location = new Point(2, dy - buttonDy - txtDy - 2);
 
-            int y = 4;
-            txtDx = this.label5min.Width;
-            this.label5min.Location = new Point(dx - txtDx, y);
-            y += txtDy + 2;
+            //int y = 4;
+            //txtDx = this.label5min.Width;
+            //this.label5min.Location = new Point(dx - txtDx, y);
+            //y += txtDy + 2;
 
-            txtDx = this.label15min.Width;
-            this.label15min.Location = new Point(dx - txtDx, y);
-            y += txtDy + 2;
+            //txtDx = this.label15min.Width;
+            //this.label15min.Location = new Point(dx - txtDx, y);
+            //y += txtDy + 2;
 
-            txtDx = this.label30min.Width;
-            this.label30min.Location = new Point(dx - txtDx, y);
-            y += txtDy + 2;
+            //txtDx = this.label25min.Width;
+            //this.label25min.Location = new Point(dx - txtDx, y);
+            //y += txtDy + 2;
 
-            txtDx = this.label1hr.Width;
-            this.label1hr.Location = new Point(dx - txtDx, y);
-            y += txtDy + 2;
+            //txtDx = this.label45min.Width;
+            //this.label45min.Location = new Point(dx - txtDx, y);
+            //y += txtDy + 2;
 
-            txtDx = this.labelOther.Width;
-            this.labelOther.Location = new Point(dx - txtDx, y);
-            y += txtDy + 2;
+            //txtDx = this.labelOther.Width;
+            //this.labelOther.Location = new Point(dx - txtDx, y);
+            //y += txtDy + 2;
 
             this.ResumeLayout();
         }
@@ -190,10 +190,11 @@ namespace _15minutes
         {
             label5min.Visible = visible;
             label15min.Visible = visible;
-            label30min.Visible = visible;
-            label1hr.Visible = visible;
+            label25min.Visible = visible;
+            label45min.Visible = visible;
             labelOther.Visible = visible;
             labelWebSite.Visible = visible;
+            lblOptions.Visible = visible;
         }
 
         public void SetBackColor(Color color)
@@ -201,10 +202,11 @@ namespace _15minutes
             this.BackColor = color;
             label5min.BackColor = color;
             label15min.BackColor = color;
-            label30min.BackColor = color;
-            label1hr.BackColor = color;
+            label25min.BackColor = color;
+            label45min.BackColor = color;
             labelOther.BackColor = color;
             labelWebSite.BackColor = color;
+            lblOptions.BackColor = color;
         }
 
         public void SwitchToSettingTimeState()
@@ -308,14 +310,14 @@ namespace _15minutes
             SetTime(0, 15, 0);
         }
 
-        private void label30min_Click(object sender, EventArgs e)
+        private void label25min_Click(object sender, EventArgs e)
         {
-            SetTime(0, 30, 0);
+            SetTime(0, 25, 0);
         }
 
-        private void label1hr_Click(object sender, EventArgs e)
+        private void label45min_Click(object sender, EventArgs e)
         {
-            SetTime(1, 00, 0);
+            SetTime(0, 45, 0);
         }
 
         private void labelOther_Click(object sender, EventArgs e)
@@ -394,7 +396,7 @@ namespace _15minutes
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            using (var font = new Font("Arial", 24, FontStyle.Bold))
+            using (var font = new Font("Segoe UI", 38, FontStyle.Bold))
             {
                 Graphics g = e.Graphics;
                 g.SmoothingMode = SmoothingMode.AntiAlias;
@@ -436,5 +438,15 @@ namespace _15minutes
             // "http://blog.kowalczyk.info/software/15minutes/index.html?from15minutes"
             Process.Start("http://bit.ly/eElvh");
         }
+
+        private void lblOptions_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not yet implemented");
+        }
+
+      
+
+
+        
     }
 }

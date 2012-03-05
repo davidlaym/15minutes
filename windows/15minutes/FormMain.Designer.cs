@@ -32,22 +32,24 @@
             this.buttonStartOk = new System.Windows.Forms.Button();
             this.label5min = new System.Windows.Forms.Label();
             this.label15min = new System.Windows.Forms.Label();
-            this.label30min = new System.Windows.Forms.Label();
+            this.label25min = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.buttonStop = new System.Windows.Forms.Button();
             this.buttonPauseResume = new System.Windows.Forms.Button();
             this.labelWebSite = new System.Windows.Forms.Label();
-            this.label1hr = new System.Windows.Forms.Label();
+            this.label45min = new System.Windows.Forms.Label();
             this.labelOther = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.lblOptions = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonStartOk
             // 
             this.buttonStartOk.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonStartOk.Location = new System.Drawing.Point(0, 77);
+            this.buttonStartOk.Location = new System.Drawing.Point(0, 88);
+            this.buttonStartOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonStartOk.Name = "buttonStartOk";
-            this.buttonStartOk.Size = new System.Drawing.Size(224, 23);
+            this.buttonStartOk.Size = new System.Drawing.Size(295, 37);
             this.buttonStartOk.TabIndex = 0;
             this.buttonStartOk.Text = "Start";
             this.buttonStartOk.UseVisualStyleBackColor = true;
@@ -55,34 +57,43 @@
             // 
             // label5min
             // 
+            this.label5min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5min.AutoSize = true;
-            this.label5min.Location = new System.Drawing.Point(188, 1);
+            this.label5min.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5min.Location = new System.Drawing.Point(258, 2);
+            this.label5min.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5min.Name = "label5min";
-            this.label5min.Size = new System.Drawing.Size(32, 13);
+            this.label5min.Size = new System.Drawing.Size(37, 15);
             this.label5min.TabIndex = 1;
             this.label5min.Text = "5 min";
             this.label5min.Click += new System.EventHandler(this.label5min_Click);
             // 
             // label15min
             // 
+            this.label15min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label15min.AutoSize = true;
-            this.label15min.Location = new System.Drawing.Point(182, 13);
+            this.label15min.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15min.Location = new System.Drawing.Point(252, 17);
+            this.label15min.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15min.Name = "label15min";
-            this.label15min.Size = new System.Drawing.Size(38, 13);
+            this.label15min.Size = new System.Drawing.Size(43, 15);
             this.label15min.TabIndex = 2;
             this.label15min.Text = "15 min";
             this.label15min.Click += new System.EventHandler(this.label15min_Click);
             // 
-            // label30min
+            // label25min
             // 
-            this.label30min.AutoSize = true;
-            this.label30min.BackColor = System.Drawing.Color.White;
-            this.label30min.Location = new System.Drawing.Point(182, 26);
-            this.label30min.Name = "label30min";
-            this.label30min.Size = new System.Drawing.Size(38, 13);
-            this.label30min.TabIndex = 3;
-            this.label30min.Text = "30 min";
-            this.label30min.Click += new System.EventHandler(this.label30min_Click);
+            this.label25min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25min.AutoSize = true;
+            this.label25min.BackColor = System.Drawing.Color.White;
+            this.label25min.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25min.Location = new System.Drawing.Point(252, 32);
+            this.label25min.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25min.Name = "label25min";
+            this.label25min.Size = new System.Drawing.Size(43, 15);
+            this.label25min.TabIndex = 3;
+            this.label25min.Text = "25 min";
+            this.label25min.Click += new System.EventHandler(this.label25min_Click);
             // 
             // timer
             // 
@@ -92,9 +103,10 @@
             // buttonStop
             // 
             this.buttonStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonStop.Location = new System.Drawing.Point(106, 76);
+            this.buttonStop.Location = new System.Drawing.Point(118, 82);
+            this.buttonStop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(118, 23);
+            this.buttonStop.Size = new System.Drawing.Size(177, 37);
             this.buttonStop.TabIndex = 4;
             this.buttonStop.Text = "Stop";
             this.buttonStop.UseVisualStyleBackColor = true;
@@ -104,9 +116,10 @@
             // buttonPauseResume
             // 
             this.buttonPauseResume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonPauseResume.Location = new System.Drawing.Point(0, 76);
+            this.buttonPauseResume.Location = new System.Drawing.Point(0, 82);
+            this.buttonPauseResume.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonPauseResume.Name = "buttonPauseResume";
-            this.buttonPauseResume.Size = new System.Drawing.Size(105, 23);
+            this.buttonPauseResume.Size = new System.Drawing.Size(158, 37);
             this.buttonPauseResume.TabIndex = 5;
             this.buttonPauseResume.Text = "Pause";
             this.buttonPauseResume.UseVisualStyleBackColor = true;
@@ -115,56 +128,80 @@
             // 
             // labelWebSite
             // 
+            this.labelWebSite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelWebSite.AutoSize = true;
             this.labelWebSite.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelWebSite.Location = new System.Drawing.Point(1, 60);
+            this.labelWebSite.Location = new System.Drawing.Point(2, 62);
+            this.labelWebSite.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelWebSite.Name = "labelWebSite";
-            this.labelWebSite.Size = new System.Drawing.Size(64, 13);
+            this.labelWebSite.Size = new System.Drawing.Size(95, 21);
             this.labelWebSite.TabIndex = 6;
             this.labelWebSite.Text = "visit website";
             this.labelWebSite.Click += new System.EventHandler(this.labelWebSite_Click);
             // 
-            // label1hr
+            // label45min
             // 
-            this.label1hr.AutoSize = true;
-            this.label1hr.BackColor = System.Drawing.Color.White;
-            this.label1hr.Location = new System.Drawing.Point(193, 39);
-            this.label1hr.Name = "label1hr";
-            this.label1hr.Size = new System.Drawing.Size(25, 13);
-            this.label1hr.TabIndex = 7;
-            this.label1hr.Text = "1 hr";
-            this.label1hr.Click += new System.EventHandler(this.label1hr_Click);
+            this.label45min.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label45min.AutoSize = true;
+            this.label45min.BackColor = System.Drawing.Color.White;
+            this.label45min.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45min.Location = new System.Drawing.Point(252, 47);
+            this.label45min.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label45min.Name = "label45min";
+            this.label45min.Size = new System.Drawing.Size(43, 15);
+            this.label45min.TabIndex = 7;
+            this.label45min.Text = "45 min";
+            this.label45min.Click += new System.EventHandler(this.label45min_Click);
             // 
             // labelOther
             // 
+            this.labelOther.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelOther.AutoSize = true;
             this.labelOther.BackColor = System.Drawing.Color.White;
-            this.labelOther.Location = new System.Drawing.Point(178, 52);
+            this.labelOther.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOther.Location = new System.Drawing.Point(248, 62);
+            this.labelOther.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelOther.Name = "labelOther";
-            this.labelOther.Size = new System.Drawing.Size(41, 13);
+            this.labelOther.Size = new System.Drawing.Size(47, 15);
             this.labelOther.TabIndex = 8;
             this.labelOther.Text = "custom";
             this.labelOther.Click += new System.EventHandler(this.labelOther_Click);
             // 
+            // lblOptions
+            // 
+            this.lblOptions.AutoSize = true;
+            this.lblOptions.Location = new System.Drawing.Point(2, 2);
+            this.lblOptions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblOptions.Name = "lblOptions";
+            this.lblOptions.Size = new System.Drawing.Size(65, 21);
+            this.lblOptions.TabIndex = 9;
+            this.lblOptions.Text = "Options";
+            this.lblOptions.Click += new System.EventHandler(this.lblOptions_Click);
+            this.lblOptions.MouseEnter += new System.EventHandler(this.label_MouseEnter);
+            this.lblOptions.MouseLeave += new System.EventHandler(this.label_MouseLeave);
+            // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(224, 100);
+            this.ClientSize = new System.Drawing.Size(295, 125);
+            this.Controls.Add(this.lblOptions);
             this.Controls.Add(this.labelOther);
-            this.Controls.Add(this.label1hr);
+            this.Controls.Add(this.label45min);
             this.Controls.Add(this.labelWebSite);
             this.Controls.Add(this.buttonPauseResume);
             this.Controls.Add(this.buttonStop);
-            this.Controls.Add(this.label30min);
+            this.Controls.Add(this.label25min);
             this.Controls.Add(this.label15min);
             this.Controls.Add(this.label5min);
             this.Controls.Add(this.buttonStartOk);
-            this.MaximumSize = new System.Drawing.Size(240, 138);
-            this.MinimumSize = new System.Drawing.Size(240, 138);
+            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximumSize = new System.Drawing.Size(352, 200);
             this.Name = "FormMain";
-            this.Text = "15minutes v1.1";
+            this.Text = "15minutes v2.0a";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,14 +212,15 @@
         private System.Windows.Forms.Button buttonStartOk;
         private System.Windows.Forms.Label label5min;
         private System.Windows.Forms.Label label15min;
-        private System.Windows.Forms.Label label30min;
+        private System.Windows.Forms.Label label25min;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.Button buttonPauseResume;
         private System.Windows.Forms.Label labelWebSite;
-        private System.Windows.Forms.Label label1hr;
+        private System.Windows.Forms.Label label45min;
         private System.Windows.Forms.Label labelOther;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label lblOptions;
     }
 }
 
