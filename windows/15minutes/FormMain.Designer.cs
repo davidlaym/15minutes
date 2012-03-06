@@ -103,10 +103,10 @@
             // buttonStop
             // 
             this.buttonStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonStop.Location = new System.Drawing.Point(118, 82);
+            this.buttonStop.Location = new System.Drawing.Point(150, 88);
             this.buttonStop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(177, 37);
+            this.buttonStop.Size = new System.Drawing.Size(145, 37);
             this.buttonStop.TabIndex = 4;
             this.buttonStop.Text = "Stop";
             this.buttonStop.UseVisualStyleBackColor = true;
@@ -116,10 +116,10 @@
             // buttonPauseResume
             // 
             this.buttonPauseResume.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonPauseResume.Location = new System.Drawing.Point(0, 82);
+            this.buttonPauseResume.Location = new System.Drawing.Point(0, 88);
             this.buttonPauseResume.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonPauseResume.Name = "buttonPauseResume";
-            this.buttonPauseResume.Size = new System.Drawing.Size(158, 37);
+            this.buttonPauseResume.Size = new System.Drawing.Size(145, 37);
             this.buttonPauseResume.TabIndex = 5;
             this.buttonPauseResume.Text = "Pause";
             this.buttonPauseResume.UseVisualStyleBackColor = true;
@@ -199,7 +199,6 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximumSize = new System.Drawing.Size(352, 200);
             this.Name = "FormMain";
             this.Text = "15minutes v2.0a";
             this.ResumeLayout(false);
