@@ -342,6 +342,7 @@ namespace _15minutes
 
         protected override void OnPaint(PaintEventArgs e)
         {
+            CheckOnTop();
             using (var font = new Font("Segoe UI", 38, FontStyle.Bold))
             {
                 Graphics g = e.Graphics;
@@ -358,6 +359,17 @@ namespace _15minutes
                 g.DrawString(s, font, Brushes.Black, pos);
             }
             base.OnPaint(e);
+        }
+
+        private void CheckOnTop()
+        {
+            if(Properties.Settings.Default.OnTopAllways)
+                this.TopMost = true;
+            else if (Properties.Settings.Default.OnTopRunning && CurrentState == State.Running)
+                this.TopMost = true;
+            else
+                this.TopMost = false;
+
         }
 
         private void buttonPauseResume_Click(object sender, EventArgs e)
@@ -387,7 +399,10 @@ namespace _15minutes
 
         private void lblOptions_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not yet implemented");
+            using (var dlg = new OptionsDialog())
+            {
+                dlg.ShowDialog(this);
+            }            
         }
 
       

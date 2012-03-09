@@ -22,5 +22,29 @@ namespace _15minutes.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool OnTopAllways {
+            get {
+                return ((bool)(this["OnTopAllways"]));
+            }
+            set {
+                this["OnTopAllways"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool OnTopRunning {
+            get {
+                return ((bool)(this["OnTopRunning"]));
+            }
+            set {
+                this["OnTopRunning"] = value;
+            }
+        }
     }
 }
