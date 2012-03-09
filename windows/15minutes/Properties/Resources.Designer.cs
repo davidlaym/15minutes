@@ -59,5 +59,17 @@ namespace _15minutes.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.IO.UnmanagedMemoryStream alarm {
+            get {
+                return ResourceManager.GetStream("alarm", resourceCulture);
+            }
+        }
+        
+        internal static System.IO.UnmanagedMemoryStream ticking {
+            get {
+                return ResourceManager.GetStream("ticking", resourceCulture);
+            }
+        }
     }
 }
