@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
+using System.Media;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
@@ -27,6 +28,8 @@ namespace _15minutes
         int FlashCountRemaining;
         private NotifyIcon notifyIcon;
         Color BgColor = System.Drawing.Color.White;
+        private SoundPlayer ticks = new SoundPlayer(Properties.Resources.ticking);
+        private SoundPlayer alarm = new SoundPlayer(Properties.Resources.alarm);
 
         public void SetTime(int hours, int minutes, int seconds)
         {
@@ -168,7 +171,8 @@ namespace _15minutes
 
             buttonPauseResume.Visible = false;
             buttonStop.Visible = false;
-
+            ticks.Stop();
+            alarm.Stop();
             SetBackColor(this.BgColor);
             this.Invalidate();
         }
@@ -190,6 +194,11 @@ namespace _15minutes
             CalcRemaining();
             timer.Interval = 1000;
             timer.Start();
+            if(Properties.Settings.Default.SoundTickTack)
+            {
+                ticks.PlayLooping();
+            }
+            
             this.Invalidate();
         }
 
@@ -209,6 +218,7 @@ namespace _15minutes
             buttonStop.Visible = true;
 
             timer.Stop();
+            ticks.Stop();
             buttonPauseResume.Text = "Resume";
             this.Invalidate();
         }
@@ -227,8 +237,11 @@ namespace _15minutes
 
             FlashCountRemaining = 20;
             timer.Stop();
+            ticks.Stop();
             timer.Interval = 200;
             timer.Start();
+            if(Properties.Settings.Default.SoundAlarm)
+                alarm.Play();
 
             SetResidentMode(false, false);
             this.Invalidate();
